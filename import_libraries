@@ -1,0 +1,70 @@
+# Import libraries
+
+%matplotlib inline
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import warnings
+import pickle
+from joblib import dump, load
+from joblib import Parallel, delayed
+
+from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.decomposition import PCA
+
+# Regression
+
+from sklearn.linear_model import Ridge, Lasso, LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+
+# Classification Models
+
+from sklearn import svm
+from sklearn.svm import LinearSVC, SVC
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.cluster import KMeans
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import AdaBoostClassifier
+
+# Preprocessing
+
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder, OrdinalEncoder
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.compose import ColumnTransformer, make_column_transformer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.impute import SimpleImputer
+
+# ML Model Evaluations
+
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
+
+# Metrics for classification
+
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import RocCurveDisplay, roc_curve, roc_auc_score
+
+# Metrics for Regression
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error, mean_squared_log_error
+
+from scipy import sparse, stats
+
+# nltk
+
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+
+import os
+import re
+import difflib
+import pytz
+import getpass
+import webbrowser as wb
